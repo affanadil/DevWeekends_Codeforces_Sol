@@ -29,13 +29,10 @@ void solver()
         if (b[i] == 'B')
             b[i] = 'G';
     }
-    for (int i = 0; i < n; i++)
-        if (a[i] != b[i])
-        {
-            NO;
-            return;
-        }
-    YES;
+    if (a == b)
+        YES;
+    else
+        NO;
 }
 
 int main()
